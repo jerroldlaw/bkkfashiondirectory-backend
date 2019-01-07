@@ -6,7 +6,7 @@ const MongoClient = require('mongodb').MongoClient;
 const cors = require('cors')
 
 // Connection URL
-const url = process.env.MONGO_URL;
+const url = process.env.MONGODB_URI;
 console.log(url);
 app.use(cors())
 // Database Name
