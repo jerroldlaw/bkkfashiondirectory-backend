@@ -7,10 +7,10 @@ const cors = require('cors')
 
 // Connection URL
 const url = process.env.MONGODB_URI;
-console.log(url);
+const dbName = process.env.MONGODB_NAME;
+
 app.use(cors())
-// Database Name
-const dbName = 'fashionbangkok';
+
 let db;
 
 // Use connect method to connect to the server
