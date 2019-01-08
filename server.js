@@ -20,7 +20,7 @@ MongoClient.connect(url, function(err, client) {
   db = client.db(dbName);
 });
 
-app.get('/', (req, res) => {
+app.get('/directory', (req, res) => {
   db.collection('fashion-places').find({}).toArray(function(err, result) {
     if (err) throw err;
     res.json(result)
